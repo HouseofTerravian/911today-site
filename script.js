@@ -14,24 +14,94 @@ const BRANDS = [
     urlLabel: 'Enter Platform'
   },
   {
-    id: 'winthehour',
+    id: 'winthehour-app',
     name: 'Win The Hour!™',
     icon: '⏱',
     tagline: 'Own Every 60 Minutes',
     description: 'The hourly productivity and accountability app. Win The Hour!™ turns your day into a series of battles you can actually win — one hour at a time. Track. Rate. Win.',
     founderMsg: 'Time is the only resource that doesn\'t replenish. Win The Hour is how you stop leaking it.',
     url: 'https://winthehour.app',
-    urlLabel: 'Learn More'
+    urlLabel: 'Get the App'
   },
   {
-    id: 'trpsh',
-    name: 'TRPSH',
-    icon: '🧭',
-    tagline: 'The Right Path Starts Here',
-    description: 'An education platform giving young people the financial and life knowledge they needed before college. The guidance system, courses, and banking resources no one handed them.',
-    founderMsg: 'I built TRPSH for the student version of me — who had no idea what was coming.',
-    url: 'https://trpsh-site.vercel.app',
-    urlLabel: 'Explore TRPSH'
+    id: 'winthehour-site',
+    name: 'WinTheHour Site',
+    icon: '🏆',
+    tagline: 'The Hour Doesn\'t Wait',
+    description: 'The official Win The Hour!™ landing experience. Explore features, membership tiers, the manifesto, and the philosophy behind the movement.',
+    founderMsg: 'The site is the signal before the signal. It\'s where the decision is made.',
+    url: 'https://winthehour-site.vercel.app',
+    urlLabel: 'Visit Site'
+  },
+  {
+    id: 'ownthehour',
+    name: 'Own The Hour',
+    icon: '⏰',
+    tagline: 'Claim Every 60 Minutes',
+    description: 'Own The Hour is the next evolution in hourly mastery — a platform and philosophy for those who don\'t just want to win the hour, they want to own it completely.',
+    founderMsg: 'Winning is one thing. Ownership is another. This is for the owners.',
+    url: 'https://ownthehour.app',
+    urlLabel: 'Enter OwnTheHour'
+  },
+  {
+    id: 'thebossminute',
+    name: 'The Boss Minute',
+    icon: '💼',
+    tagline: 'One Minute to Think Like a Boss',
+    description: 'Daily micro-wisdom for builders, entrepreneurs, and leaders. Every Boss Minute delivers one sharp insight — the kind of thinking that separates the ones who make it from the ones who don\'t.',
+    founderMsg: 'A minute of the right thinking is worth more than an hour of the wrong action.',
+    url: 'https://thebossminute.com',
+    urlLabel: 'Get the Minute'
+  },
+  {
+    id: 'paperworkvault',
+    name: 'Paperwork Vault',
+    icon: '🗄️',
+    tagline: 'Your Documents, Secured and Organized',
+    description: 'A digital vault for life\'s most important paperwork. Store, organize, and retrieve critical documents the moment you need them — without the chaos.',
+    founderMsg: 'The most expensive document is the one you can\'t find when you need it.',
+    url: 'https://paperworkvault.io',
+    urlLabel: 'Open the Vault'
+  },
+  {
+    id: 'dreamgpt',
+    name: 'DreamGPT Ventures',
+    icon: '🤖',
+    tagline: 'Where Dreams Meet Intelligence',
+    description: 'An AI-powered ventures platform at the intersection of imagination and execution. DreamGPT Ventures exists to turn bold ideas into living, breathing projects.',
+    founderMsg: 'The future belongs to whoever can dream it and then build it. AI just closed the gap.',
+    url: 'https://dreamgpt.ventures',
+    urlLabel: 'Explore Ventures'
+  },
+  {
+    id: 'grounled',
+    name: 'Grounled',
+    icon: '🌱',
+    tagline: 'Rooted. Self-Led.',
+    description: 'A brand and platform built on the principle of being grounded in who you are while leading yourself forward — without waiting for permission, validation, or direction from anyone else.',
+    founderMsg: 'Grounled is the word I made up for the feeling of being both rooted and free.',
+    url: '#',
+    urlLabel: 'Coming Soon'
+  },
+  {
+    id: 'houseoftheinnersun',
+    name: 'House of the Inner Sun',
+    icon: '☀️',
+    tagline: 'The Light Within Is Real',
+    description: 'A spiritual wellness platform dedicated to awakening the light that already lives inside you. Practices, guidance, and community for those walking the path inward.',
+    founderMsg: 'There\'s a sun inside every human being. This house was built to help you find yours.',
+    url: 'https://houseoftheinnersun.netlify.app',
+    urlLabel: 'Enter the House'
+  },
+  {
+    id: 'sagaofpolarity',
+    name: 'Saga of Polarity',
+    icon: '☯️',
+    tagline: 'The Moment Contains Love',
+    description: 'A 24/7 online forum and support community for Law of One seekers navigating their catalysts. A sacred space for the spiritual work that doesn\'t come with a manual.',
+    founderMsg: 'You don\'t have to go through it alone. The Moment contains Love.',
+    url: 'https://sagaofpolarity.forum',
+    urlLabel: 'Join the Forum'
   },
   {
     id: 'nooworld',
@@ -62,6 +132,156 @@ const BRANDS = [
     founderMsg: 'The strongest thing you can do is ask for support.',
     url: 'https://supportgroups.online',
     urlLabel: 'Find Your Group'
+  },
+  {
+    id: 'sport-crownstrike',
+    name: 'Sport Crownstrike',
+    icon: '🏅',
+    tagline: 'The Crown in Competition',
+    description: 'The sports division of Crownstrike — built for athletes, competitors, and those who bring sovereign energy to every game, match, and season.',
+    founderMsg: 'The crown doesn\'t take a day off. Neither do real competitors.',
+    url: 'https://sportcrownstrike.com',
+    urlLabel: 'Enter the Arena'
+  },
+  {
+    id: 'stepleague',
+    name: 'Step League',
+    icon: '👟',
+    tagline: 'Every Step Counts',
+    description: 'A competitive step-tracking community where your daily movement earns you real standing. Step League turns walking into sport and consistency into a leaderboard.',
+    founderMsg: 'I built Step League because motion is the most underrated metric in life.',
+    url: 'https://stepleague.online',
+    urlLabel: 'Join the League'
+  },
+  {
+    id: 'mmhw',
+    name: 'MMHW',
+    icon: '🧠',
+    tagline: 'Make It Make Sense',
+    description: 'A platform built around clarity, mental frameworks, and the kind of thinking that cuts through noise. For the minds that need more signal and less static.',
+    founderMsg: 'Sometimes the whole problem is that nobody made it make sense. MMHW fixes that.',
+    url: '#',
+    urlLabel: 'Coming Soon'
+  },
+  {
+    id: '121212black',
+    name: '121212.Black',
+    icon: '◼️',
+    tagline: 'The Signal Beneath the Surface',
+    description: 'A premium multi-section digital experience operating in the dark. 121212.Black is a statement brand built for those who move deliberately, quietly, and with intention.',
+    founderMsg: '12:12:12. The number that keeps showing up. Now it has a home.',
+    url: 'https://121212.black',
+    urlLabel: 'Enter'
+  },
+  {
+    id: 'happyholidaycouples',
+    name: 'Happy Holiday Couples',
+    icon: '🌴',
+    tagline: 'Adventures Built for Two',
+    description: 'Travel and vacation experiences designed specifically for couples. From planning to memories — Happy Holiday Couples exists to make your time together extraordinary.',
+    founderMsg: 'Two people. One adventure. That\'s the whole blueprint.',
+    url: 'https://happyholidaycouples.vacations',
+    urlLabel: 'Plan Your Trip'
+  },
+  {
+    id: 'crystallizedlovers',
+    name: 'Crystallized Lovers',
+    icon: '💎',
+    tagline: 'Love in Its Purest Form',
+    description: 'A brand at the intersection of romance, beauty, and permanence. Crystallized Lovers captures the moments and connections that deserve to last forever.',
+    founderMsg: 'Some love is too rare not to crystallize.',
+    url: 'https://crystallizedlovers.com',
+    urlLabel: 'Discover'
+  },
+  {
+    id: 'mcm-enterprises',
+    name: 'MCM Enterprises',
+    icon: '🏢',
+    tagline: 'The Enterprise Behind the Vision',
+    description: 'The holding and enterprise entity behind multiple Terravian ventures. MCM Enterprises operates at the intersection of strategy, creativity, and long-term brand building.',
+    founderMsg: 'Every empire needs an enterprise structure. MCM is where the foundation lives.',
+    url: '#',
+    urlLabel: 'Coming Soon'
+  },
+  {
+    id: 'green-ray-creations',
+    name: 'Green Ray Creations',
+    icon: '💚',
+    tagline: 'Where Vision Becomes Reality',
+    description: 'A creative studio and production brand dedicated to bringing bold ideas to life. Green Ray Creations handles the craft — the design, the build, the execution.',
+    founderMsg: 'The green ray is the last flash of light at sunset. Rare. Beautiful. That\'s what we make.',
+    url: '#',
+    urlLabel: 'Coming Soon'
+  },
+  {
+    id: 'foods-from-the-future',
+    name: 'Foods From the Future',
+    icon: '🚀',
+    tagline: 'Eat Tomorrow, Today',
+    description: 'A food concept brand exploring what nutrition, flavor, and the dining experience look like when we stop building for the past. The future of food — arriving now.',
+    founderMsg: 'What if the food you ate was actually designed for where we\'re going, not where we\'ve been?',
+    url: '#',
+    urlLabel: 'Coming Soon'
+  },
+  {
+    id: 'tostadas-from-the-future',
+    name: 'Tostadas From the Future',
+    icon: '🌮',
+    tagline: 'The Future Is Delicious',
+    description: 'The boldest concept in the Foods From the Future universe. Tostadas reimagined — built with future-forward ingredients, flavor profiles, and a very specific kind of audacity.',
+    founderMsg: 'Why not tostadas? Why not the future? Why not both?',
+    url: '#',
+    urlLabel: 'Coming Soon'
+  },
+  {
+    id: 'l3g1t',
+    name: 'L3G1T',
+    icon: '✅',
+    tagline: 'Only the L3g1t',
+    description: 'A streetwear clothing brand built on one singular ethos: legitimacy. Every piece, every drop, every design is about being authentic in a world full of imitation.',
+    founderMsg: 'L3g1t isn\'t just a word. It\'s the standard. Either you are or you aren\'t.',
+    url: 'https://l3g1t.store',
+    urlLabel: 'Shop L3G1T'
+  },
+  {
+    id: 'kindaclothing',
+    name: 'Kinda Clothing',
+    icon: '👕',
+    tagline: 'Kinda Everything. Totally You.',
+    description: 'Fashion that refuses to be boxed in. Kinda Clothing is for the person who doesn\'t fit one aesthetic, one mood, or one definition — and wears that freely.',
+    founderMsg: 'Kinda this. Kinda that. Fully yourself.',
+    url: 'https://kindaclothing.store',
+    urlLabel: 'Shop Kinda'
+  },
+  {
+    id: 'thebigretale',
+    name: 'The Big Retale',
+    icon: '🛍️',
+    tagline: 'Retale It Your Way',
+    description: 'A retail and resale platform built for the new generation of buyers and sellers. The Big Retale reimagines what a store can be — curated, community-driven, and yours.',
+    founderMsg: 'The old retail model is over. The Big Retale is what comes next.',
+    url: 'https://thebigretale.store',
+    urlLabel: 'Enter the Store'
+  },
+  {
+    id: 'shathreads',
+    name: 'Sha Threads',
+    icon: '🕊️',
+    tagline: 'Wear Peace',
+    description: 'A clothing brand with a single purpose — to put peace on your body. Sha Threads designs pieces that feel like calm, look like intention, and carry a message without saying a word.',
+    founderMsg: 'Wear Peace. That\'s it. That\'s the whole message.',
+    url: 'https://shathreads.store',
+    urlLabel: 'Shop Sha Threads'
+  },
+  {
+    id: 'sexymanhands',
+    name: 'Sexy Man Hands',
+    icon: '🤌',
+    tagline: 'Confidence in Every Detail',
+    description: 'A men\'s grooming brand built around the belief that the details matter. Because confidence lives in the specifics — and your hands tell the world a story.',
+    founderMsg: 'The handshake, the grip, the gesture — your hands are always speaking. Make them say something.',
+    url: '#',
+    urlLabel: 'Coming Soon'
   },
   {
     id: '911today',
