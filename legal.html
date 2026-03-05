@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Legal — 911.Today</title>
+  <meta name="robots" content="noindex" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <style>
+    .legal-page {
+      padding: 8rem 2rem 6rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold);
+      text-decoration: none;
+      font-size: 0.82rem;
+      letter-spacing: 0.1em;
+      margin-bottom: 3rem;
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
+
+    .back-link:hover { opacity: 1; }
+
+    .legal-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 3rem;
+      padding-bottom: 1.75rem;
+      border-bottom: 1px solid var(--gold-dim);
+    }
+
+    .legal-tab {
+      background: none;
+      border: 1px solid var(--gold-dim);
+      color: var(--text-muted);
+      padding: 0.5rem 1.1rem;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .legal-tab.active,
+    .legal-tab:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(201, 162, 39, 0.08);
+    }
+
+    .legal-doc { display: none; }
+    .legal-doc.active { display: block; }
+
+    .legal-doc h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .legal-date {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.25);
+      margin-bottom: 2rem;
+      letter-spacing: 0.08em;
+    }
+
+    .legal-doc h2 {
+      font-size: 1.05rem;
+      color: var(--white);
+      margin: 2rem 0 0.75rem;
+      letter-spacing: 0.03em;
+    }
+
+    .legal-doc p {
+      color: var(--text-muted);
+      line-height: 1.82;
+      font-size: 0.925rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .legal-doc ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .legal-doc li {
+      color: var(--text-muted);
+      line-height: 1.75;
+      font-size: 0.925rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .legal-footer-simple {
+      border-top: 1px solid var(--gold-dim);
+      padding: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">911.Today</a>
+    <ul class="nav-links">
+      <li><a href="index.html#broadcast">Broadcast</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#pricing">Join</a></li>
+    </ul>
+    <a href="index.html#broadcast" class="nav-cta">Watch Live</a>
+  </nav>
+
+  <div class="legal-page">
+    <a href="index.html" class="back-link">&#8592; Back to 911.Today</a>
+
+    <div class="legal-tabs" role="tablist">
+      <button class="legal-tab active" data-target="terms" role="tab" aria-selected="true">Terms</button>
+      <button class="legal-tab" data-target="privacy" role="tab" aria-selected="false">Privacy</button>
+      <button class="legal-tab" data-target="refunds" role="tab" aria-selected="false">Refunds</button>
+      <button class="legal-tab" data-target="ada" role="tab" aria-selected="false">ADA Accessibility</button>
+      <button class="legal-tab" data-target="affiliate" role="tab" aria-selected="false">Affiliate Disclosure</button>
+      <button class="legal-tab" data-target="disclaimer" role="tab" aria-selected="false">Disclaimer</button>
+    </div>
+
+    <!-- TERMS -->
+    <div class="legal-doc active" id="terms" role="tabpanel">
+      <h1>Terms and Conditions</h1>
+      <p class="legal-date">Effective: March 2026</p>
+      <p>By accessing 911.Today you agree to use the website in accordance with these terms.</p>
+
+      <h2>Use of Content</h2>
+      <p>Users may view livestream broadcasts and access content for personal use. Content may not be redistributed, reproduced, or used commercially without written permission from 911.Today and the House of Terravian.</p>
+
+      <h2>Memberships</h2>
+      <p>Membership subscriptions may be canceled at any time through your account settings or by contacting hello@911.today. Cancellation takes effect at the end of the current billing period.</p>
+
+      <h2>Modifications</h2>
+      <p>The website owners reserve the right to modify, suspend, or discontinue services at any time without prior notice. We are not liable for any modification or discontinuation of service.</p>
+
+      <h2>User Conduct</h2>
+      <p>Users agree not to:</p>
+      <ul>
+        <li>Use the platform for unlawful purposes</li>
+        <li>Disrupt or interfere with the service or its infrastructure</li>
+        <li>Attempt to gain unauthorized access to any portion of the platform</li>
+        <li>Harass, threaten, or harm other community members</li>
+        <li>Reproduce or resell platform content without authorization</li>
+      </ul>
+
+      <h2>Intellectual Property</h2>
+      <p>All content, branding, broadcast material, and assets on 911.Today are the exclusive property of the House of Terravian. Unauthorized use is strictly prohibited.</p>
+
+      <h2>Governing Law</h2>
+      <p>These terms are governed by applicable law. Disputes shall be resolved in the jurisdiction where the House of Terravian operates.</p>
+    </div>
+
+    <!-- PRIVACY -->
+    <div class="legal-doc" id="privacy" role="tabpanel">
+      <h1>Privacy Policy</h1>
+      <p class="legal-date">Effective: March 2026</p>
+
+      <h2>Information We Collect</h2>
+      <p>We collect limited information including:</p>
+      <ul>
+        <li>Email addresses provided voluntarily through forms or membership signup</li>
+        <li>Analytics data (pages visited, session duration, general geographic region)</li>
+        <li>Voluntary form submissions and messages</li>
+        <li>Payment information processed through secure third-party processors</li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      <p>Information is used for:</p>
+      <ul>
+        <li>Communication about broadcasts and platform updates</li>
+        <li>Service improvement and user experience optimization</li>
+        <li>Sending broadcast reminders and newsletter content (with your consent)</li>
+        <li>Membership and account management</li>
+      </ul>
+
+      <h2>Data Sharing</h2>
+      <p>We do not sell, trade, or transfer your personal data to third parties. We may share data only as required by law or to operate core platform services such as payment processors and email service providers.</p>
+
+      <h2>Cookies</h2>
+      <p>We use minimal cookies to support core functionality and analytics. You may disable cookies in your browser settings, though some features may be affected.</p>
+
+      <h2>Your Rights</h2>
+      <p>You may request access to, correction of, or deletion of your personal data at any time by contacting hello@911.today. We will respond within 30 days.</p>
+
+      <h2>Data Retention</h2>
+      <p>We retain your data only as long as necessary to provide services or as required by law. You may request deletion at any time.</p>
+    </div>
+
+    <!-- REFUNDS -->
+    <div class="legal-doc" id="refunds" role="tabpanel">
+      <h1>Refund Policy</h1>
+      <p class="legal-date">Effective: March 2026</p>
+
+      <h2>Digital Purchases</h2>
+      <p>Digital purchases including courses, guides, meditations, and PDF materials are generally non-refundable due to the immediate nature of digital delivery.</p>
+
+      <h2>Memberships</h2>
+      <p>Membership fees are generally non-refundable. Refunds may be granted at our discretion within 7 days of the initial purchase if requested in writing via email.</p>
+
+      <h2>How to Request a Refund</h2>
+      <p>To request a refund, contact hello@911.today with your order details, purchase date, and the reason for your request. We will respond within 3–5 business days.</p>
+
+      <h2>Exceptions</h2>
+      <p>Refunds will not be issued for partially used memberships, content that has been downloaded or accessed, or purchases made more than 7 days prior.</p>
+    </div>
+
+    <!-- ADA -->
+    <div class="legal-doc" id="ada" role="tabpanel">
+      <h1>ADA Accessibility Statement</h1>
+      <p class="legal-date">Effective: March 2026</p>
+      <p>911.Today is committed to ensuring digital accessibility for people with disabilities. We continually improve the user experience for everyone and apply relevant accessibility standards.</p>
+
+      <h2>Our Commitment</h2>
+      <p>We strive to provide a website that is usable by people with disabilities and compatible with assistive technologies including screen readers, keyboard navigation, and voice control software.</p>
+
+      <h2>Conformance Status</h2>
+      <p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. These guidelines explain how to make web content more accessible to people with a wide range of disabilities.</p>
+
+      <h2>Known Limitations</h2>
+      <p>We are continuously working to improve our accessibility. Live broadcast content may have limited captioning availability during initial launch phases. We are committed to adding closed captions to all archived content.</p>
+
+      <h2>Feedback and Contact</h2>
+      <p>We welcome your feedback on the accessibility of 911.Today. If you experience accessibility barriers, please contact us at hello@911.today. We aim to respond within 5 business days.</p>
+    </div>
+
+    <!-- AFFILIATE -->
+    <div class="legal-doc" id="affiliate" role="tabpanel">
+      <h1>Affiliate Disclosure</h1>
+      <p class="legal-date">Effective: March 2026</p>
+      <p>In accordance with FTC guidelines, 911.Today discloses the following material connection:</p>
+      <p>Some links on this site may be affiliate links. This means that if you click a link and make a purchase, 911.Today and the House of Terravian may earn a commission at no additional cost to you.</p>
+
+      <h2>Our Commitment</h2>
+      <p>We only recommend products, services, and platforms we genuinely believe in. Affiliate relationships do not influence our editorial content or broadcast messaging. Our primary commitment is to truth, wisdom, and the wellbeing of our community.</p>
+
+      <h2>Terravian Brand Links</h2>
+      <p>Links to other House of Terravian platforms and ventures represent our own ecosystem and are not traditional affiliate arrangements. These links are included to help our community discover the full range of resources available to them.</p>
+    </div>
+
+    <!-- DISCLAIMER -->
+    <div class="legal-doc" id="disclaimer" role="tabpanel">
+      <h1>Disclaimer</h1>
+      <p class="legal-date">Effective: March 2026</p>
+      <p>The information presented on 911.Today is for educational and inspirational purposes only.</p>
+
+      <h2>Not Professional Advice</h2>
+      <p>Content shared in broadcasts, written materials, and community spaces does not constitute professional advice of any kind — including but not limited to medical, psychological, therapeutic, legal, or financial advice. Always consult a qualified professional for decisions in these areas.</p>
+
+      <h2>Individual Results</h2>
+      <p>Spiritual and philosophical insights are personal in nature. Individual results from engaging with our content will vary. We make no guarantees of specific outcomes, transformations, or results.</p>
+
+      <h2>External Links</h2>
+      <p>Links to external websites are provided for informational purposes only. We are not responsible for the content, accuracy, or practices of third-party websites.</p>
+
+      <h2>Accuracy</h2>
+      <p>While we strive for accuracy and integrity in all content, we make no warranties regarding the completeness or accuracy of information presented in broadcasts or written materials.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-bottom" style="border-top:none; padding-top:0;">
+        <div class="footer-copy">
+          &copy; 2026 911.Today &mdash; A House of Terravian Media Project. All rights reserved.
+        </div>
+        <div class="footer-tagline">Meet Me at 9:11 &#10022;</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const tabs = document.querySelectorAll('.legal-tab');
+    const docs = document.querySelectorAll('.legal-doc');
+
+    function activateTab(targetId) {
+      tabs.forEach(t => {
+        t.classList.toggle('active', t.dataset.target === targetId);
+        t.setAttribute('aria-selected', t.dataset.target === targetId);
+      });
+      docs.forEach(d => d.classList.toggle('active', d.id === targetId));
+    }
+
+    tabs.forEach(tab => tab.addEventListener('click', () => activateTab(tab.dataset.target)));
+
+    const hash = window.location.hash.replace('#', '');
+    if (hash && document.getElementById(hash)) activateTab(hash);
+  </script>
+</body>
+</html>
