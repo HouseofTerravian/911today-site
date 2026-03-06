@@ -1,5 +1,5 @@
 // ════════════════════════════════════════════════════════════
-// 911.Today — Main Script
+// 911at911.Today — Main Script
 // ════════════════════════════════════════════════════════════
 
 const BRANDS = [
@@ -285,7 +285,7 @@ const BRANDS = [
   },
   {
     id: '911today',
-    name: '911.Today™',
+    name: '911at911.Today™',
     icon: '📡',
     tagline: 'Emergency Spiritual Wisdom — Daily at 9:11',
     description: 'The broadcast you\'re watching right now. 9 minutes, 11 seconds of spiritual clarity — every evening at 8:11 PM Central. A House of Terravian signal to the world.',
