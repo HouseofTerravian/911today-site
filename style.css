@@ -366,7 +366,7 @@ nav {
 .brands-track {
   display: flex;
   gap: 2rem;
-  animation: scrollLeft 140s linear infinite;
+  animation: scrollLeft 260s linear infinite;
   width: max-content;
 }
 
