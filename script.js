@@ -26,7 +26,7 @@ const BRANDS = [
   {
     id: 'winthehour-site',
     name: 'WinTheHour Site™',
-    icon: '🏆',
+    icon: '✔️',
     tagline: 'The Hour Doesn\'t Wait',
     description: 'The official Win The Hour!™ landing experience. Explore features, membership tiers, the manifesto, and the philosophy behind the movement.',
     founderMsg: 'The site is the signal before the signal. It\'s where the decision is made.',
@@ -146,7 +146,7 @@ const BRANDS = [
   {
     id: 'stepleague',
     name: 'Step League™',
-    icon: '👟',
+    icon: '🏆',
     tagline: 'Every Step Counts',
     description: 'A competitive step-tracking community where your daily movement earns you real standing. Step League™ turns walking into sport and consistency into a leaderboard.',
     founderMsg: 'I built Step League because motion is the most underrated metric in life.',
