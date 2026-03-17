@@ -3,12 +3,9 @@
 // ════════════════════════════════════════════════════════════
 
 // ── VIDEO CONFIG ─────────────────────────────────────────────
-// Paste a YouTube video ID below to display it on the main screen.
-// Set to null or '' to show the default placeholder.
-// Examples:
-//   'dQw4w9WgXcQ'          — a standard YouTube video
-//   'abc123XYZ'             — a YouTube Live stream ID
-const YOUTUBE_VIDEO_ID = '';
+// Video is now loaded from /video.json at runtime.
+// To update from your phone: edit video.json on GitHub mobile,
+// paste any YouTube URL or video ID, commit, and Vercel deploys.
 // ─────────────────────────────────────────────────────────────
 
 const BRANDS = [
@@ -438,20 +435,37 @@ function initNavScroll() {
 }
 
 // ════════════════════════════════════════════════════════════
-// Video Loader
+// Video Loader — fetches /video.json at runtime
 // ════════════════════════════════════════════════════════════
+function extractYouTubeId(input) {
+  if (!input) return null;
+  const str = input.trim();
+  // Already a bare ID (11 chars, no slashes/dots)
+  if (/^[A-Za-z0-9_-]{11}$/.test(str)) return str;
+  // Full URL — match all common YouTube formats
+  const m = str.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?.*v=|embed\/|live\/|shorts\/))([A-Za-z0-9_-]{11})/);
+  return m ? m[1] : null;
+}
+
 function initVideo() {
   const container = document.getElementById('video-container');
-  if (!container || !YOUTUBE_VIDEO_ID) return;
+  if (!container) return;
 
-  container.innerHTML = `
-    <iframe
-      src="https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1"
-      allow="autoplay; encrypted-media"
-      allowfullscreen
-      title="911at911.Today Live Broadcast"
-    ></iframe>
-  `;
+  fetch('/video.json?' + Date.now())
+    .then(r => r.json())
+    .then(data => {
+      const id = extractYouTubeId(data.youtube_url);
+      if (!id) return;
+      container.innerHTML = `
+        <iframe
+          src="https://www.youtube.com/embed/${id}?autoplay=1"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+          title="911at911.Today Live Broadcast"
+        ></iframe>
+      `;
+    })
+    .catch(() => {});
 }
 
 // ════════════════════════════════════════════════════════════
