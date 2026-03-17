@@ -2,6 +2,15 @@
 // 911at911.Today — Main Script
 // ════════════════════════════════════════════════════════════
 
+// ── VIDEO CONFIG ─────────────────────────────────────────────
+// Paste a YouTube video ID below to display it on the main screen.
+// Set to null or '' to show the default placeholder.
+// Examples:
+//   'dQw4w9WgXcQ'          — a standard YouTube video
+//   'abc123XYZ'             — a YouTube Live stream ID
+const YOUTUBE_VIDEO_ID = '';
+// ─────────────────────────────────────────────────────────────
+
 const BRANDS = [
   {
     id: 'crownstrike',
@@ -429,10 +438,28 @@ function initNavScroll() {
 }
 
 // ════════════════════════════════════════════════════════════
+// Video Loader
+// ════════════════════════════════════════════════════════════
+function initVideo() {
+  const container = document.getElementById('video-container');
+  if (!container || !YOUTUBE_VIDEO_ID) return;
+
+  container.innerHTML = `
+    <iframe
+      src="https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      title="911at911.Today Live Broadcast"
+    ></iframe>
+  `;
+}
+
+// ════════════════════════════════════════════════════════════
 // Init
 // ════════════════════════════════════════════════════════════
 document.addEventListener('DOMContentLoaded', () => {
   buildBrandScroll();
+  initVideo();
   initNavScroll();
   initContactForm();
   tickCountdown();
